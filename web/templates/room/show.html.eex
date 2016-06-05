@@ -1,0 +1,17 @@
+<h2>
+  <%= if @id == "lobby" do %>
+    Common Lobby
+  <% else %>
+    <%= String.slice(@id, 0..8) %>
+  <% end %>
+
+</h2>
+<div data-room="rooms:<%= @id %>" id="messages"></div>
+<textarea id="input" class='form-control' rows="5" placeholder="Type your messages and hit enter..."></textarea>
+
+<style>
+  #messages{
+    min-height: 300px;
+    background-color: #eee;
+  }
+</style>

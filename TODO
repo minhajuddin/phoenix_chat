@@ -1,0 +1,28 @@
+Features:
+---
+  +1. Lobby
+    Main Chat (this is from the main button on the front end)
+    Dana is bored, she enters the main chat room to see if anyone is there. She finds 5 people talking about kite-flying.
+
+    /room/lobby
+
+  +2. Private chat
+    Philip needs a private, throwaway chatroom to chat about his visa problems. He opens a chat with his accountant. They know the chat will dissapear when the room closes.
+
+
+  +3. Topic Chat
+    Don the programmer goes to the Front end/UI UX room to talk about Brunch.io .
+
+  4. Add block feature. if you don't like someone, block them. if three people don't like them, they get booted! from the chat.
+
+  5. Add boot feature. (See above^^^) If 3 people don't like someone, boot them.
+
+  6. Add Choice of colors/monochromatic skins....like this:
+
+  7. Add emojis
+
+  8. Deploy on heroku
+
+Notes:
+---
+Please show to process of integrating the CSS and show best practices. Don't forget to compile the SCSS to CSS.

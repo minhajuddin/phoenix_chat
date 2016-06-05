@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hello Chat!</title>
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+  </head>
+
+  <body>
+    <div class="container">
+
+
+      <a href="/topic/new" class="btn btn-primary">Create Topic</a>
+      <a href="/room/private" class="btn btn-primary">Create Private Room</a>
+
+      <div class="row">
+
+        <div class="col-md-2" style="margin-top: 100px;">
+          <%= for {id, name} <- Chat.Topics.list_topics do %>
+            <a href="/room/<%= id %>"><%= name %></a> <br/>
+          <% end %>
+        </div>
+
+        <div class="col-md-10">
+          <main role="main">
+            <%= render @view_module, @view_template, assigns %>
+          </main>
+        </div>
+
+      </div>
+
+    </div> <!-- /container -->
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>
