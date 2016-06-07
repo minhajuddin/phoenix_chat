@@ -35,7 +35,7 @@ input.addEventListener("keyup", function(e){
 
 
 channel.on("msg", function(message){
-  messages.innerHTML += `<div class=message>@${message.username} ${message.body}</div>`
+  messages.innerHTML += `<div class=message>@${message.username} [<a href='/user/${message.username}/block?current_username=${username}'>block</a>]  ${message.body}</div>`
 })
 
 export default socket

@@ -11,4 +11,13 @@ defmodule Chat.RoomChannel do
     {:noreply, socket}
   end
 
+  intercept ["msg"]
+  def handle_out("msg", %{username: sender} = body, socket) do
+    # should I filter this message?
+    if !Chat.BlockedUsers.user_blocked?(socket.assigns.username, sender) do
+      push socket, "msg", body
+    end
+    {:noreply, socket}
+  end
+
 end

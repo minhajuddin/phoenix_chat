@@ -14,6 +14,20 @@ Features:
     Don the programmer goes to the Front end/UI UX room to talk about Brunch.io .
 
   4. Add block feature. if you don't like someone, block them. if three people don't like them, they get booted! from the chat.
+    Jon
+    Jack
+
+{
+  "jack" => [
+  "khaja",
+  "spammy",
+  ]
+}
+    username, blocked_username
+    blocked_users
+    user_id : jack
+    blocked_user_id: khaja
+    jack, spammy_guy
 
   5. Add boot feature. (See above^^^) If 3 people don't like someone, boot them.
 

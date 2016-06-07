@@ -23,6 +23,8 @@ defmodule Chat.Router do
 
     get "/room/private", RoomController, :private
     get "/room/:id", RoomController, :show
+
+    get "/user/:username/block", UserController, :block
   end
 
   # Other scopes may use custom stacks.
